@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff0;
+  --secundary-color: #ffffdf;
+  --tertiary-color: #110;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: var(--tertiary-color);
+  color: var(--secundary-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: inherit;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: inherit;
+  padding: 1em 0;
+}
+
+main {
+  padding: 5rem 0;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: transparent;
+  border: 0.1em solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.3em 2em;
+  border-radius: 0.12em;
+  transition: all 0.5s;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button:not([disabled]):hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+button:disabled {
+  border: 0.1em solid var(--secundary-color);
+  color: var(--secundary-color);
+}
+
+.btn-small {
+  padding: 0 0.5em;
+}
+
+.btn-medium {
+  padding: 0 0.7em;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover,
+a:visited {
+  opacity: 0.8;
+}
+
+fieldset {
+  width: fit-content;
+}

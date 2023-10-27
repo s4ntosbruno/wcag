@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="logo.ico" />
+    <title>wcag</title>
+  </head>
+  <body>
+    <header>
+      <h1>wcag</h1>
+    </header>
+    <main>
+      <section class="hidden" id="idioma-da-pagina">
+        <h2>
+          <a
+            target="”_blank”"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
+            >diretiva 3.1.1</a
+          >: idioma da Página [A]
+        </h2>
+        <button class="btn-small" onclick="changeDocumentLang('pt-BR')">
+          pt
+        </button>
+        <button class="btn-small" onclick="changeDocumentLang('en')">en</button>
+        <button class="btn-small" onclick="changeDocumentLang('es')">es</button>
+        <p>O título é "<span lang="fr">Le Bon Usage</span>".</p>
+      </section>
+
+      <section class="hidden" id="nome_funcao_valor">
+        <h2>
+          <a
+            target="”_blank”"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value"
+            >diretiva 4.1.2</a
+          >: nome, função e valor [A]
+        </h2>
+        <label id="l1" for="f3">Me notifique em</label>
+        <select name="amt" id="f3" aria-labelledby="l1 f3 l2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <span id="l2">dias de antecedência</span>
+      </section>
+      <section class="hidden" id="rotulo-no-nome-acessivel">
+        <h2>
+          <a
+            target="”_blank”"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
+            >diretiva 2.5.3</a
+          >: rótulo no nome acessível
+        </h2>
+        <fieldset>
+          <legend>linguagens disponíveis:</legend>
+          <button
+            class="btn-small"
+            aria-label="português"
+            onclick="changeDocumentLang('pt-BR')"
+          >
+            pt
+          </button>
+          <button
+            class="btn-small"
+            aria-label="inglês"
+            onclick="changeDocumentLang('en')"
+          >
+            en
+          </button>
+          <button
+            class="btn-small"
+            aria-label="espanhol"
+            onclick="changeDocumentLang('es')"
+          >
+            es
+          </button>
+        </fieldset>
+      </section>
+      <section class="hidden" id="identificar-o-obejtivo">
+        <h2>
+          <a
+            target="”_blank”"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
+            >diretiva 1.3.6</a
+          >: identificar o objetivo
+        </h2>
+        <form role="search">
+          <label for="product-search" id="search-label">Procurar</label>
+          <input id="product-search" placeholder="título, autor ou isbn" type="text">
+          <button type="submit">encontrar livros</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <button onclick="showPreviousSection()" id="previous">anterior</button>
+      <button onclick="showNextSection()" id="next">próximo</button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
