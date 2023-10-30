@@ -3,6 +3,7 @@ const sections = [
   "nome_funcao_valor",
   "rotulo-no-nome-acessivel",
   "identificar-o-obejtivo",
+  "texto-grande"
 ];
 
 window.onload = onInit();

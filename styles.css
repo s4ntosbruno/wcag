@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary-color: #ff0;
-  --secundary-color: #ffffdf;
-  --tertiary-color: #110;
+  --primary-color: #0f0;
+  --secundary-color: #dfffdf;
+  --tertiary-color: #010;
 }
 
 html {
@@ -18,14 +18,19 @@ body {
   font-family: "Roboto Mono", sans-serif;
   background-color: var(--tertiary-color);
   color: var(--secundary-color);
-  font-size: 20px;
+  font-size: 24px;
+  padding: 0 2rem;
+  margin: 0;
 }
 
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 95%;
   background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -33,11 +38,11 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: inherit;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 main {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 h1 {
@@ -89,4 +94,14 @@ a:visited {
 
 fieldset {
   width: fit-content;
+}
+
+dt { 
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 16px;
+  }
 }

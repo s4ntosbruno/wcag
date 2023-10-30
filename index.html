@@ -11,6 +11,15 @@
   <body>
     <header>
       <h1>wcag</h1>
+      <div>
+        <button class="btn-small" onclick="changeColors(0)">R</button>
+        <button class="btn-small" onclick="changeColors(1)">G</button>
+        <button class="btn-small" onclick="changeColors(2)">B</button>
+        <button class="btn-small" onclick="changeColors(3)">R + B</button>
+        <button class="btn-small" onclick="changeColors(4)">G + B</button>
+        <button class="btn-small" onclick="changeColors(5)">R + G</button>
+        <button class="btn-small" onclick="changeColors(6)">R + G + B</button>
+      </div>
     </header>
     <main>
       <section class="hidden" id="idioma-da-pagina">
@@ -21,14 +30,23 @@
             >diretiva 3.1.1</a
           >: idioma da Página [A]
         </h2>
+        <dl>
+          <dt>objetivo</dt>
+          <dd>
+            A tecnologia assistiva pode determinar o idioma de uma página
+          </dd>
+          <dt>tarefa</dt>
+          <dd>Indique o idioma predominante em uma página</dd>
+        </dl>
         <button class="btn-small" onclick="changeDocumentLang('pt-BR')">
           pt
         </button>
         <button class="btn-small" onclick="changeDocumentLang('en')">en</button>
         <button class="btn-small" onclick="changeDocumentLang('es')">es</button>
+        <button class="btn-small" onclick="changeDocumentLang('fr')">fr</button>
+        <button class="btn-small" onclick="changeDocumentLang('zh')">zh</button>
         <p>O título é "<span lang="fr">Le Bon Usage</span>".</p>
       </section>
-
       <section class="hidden" id="nome_funcao_valor">
         <h2>
           <a
@@ -37,6 +55,14 @@
             >diretiva 4.1.2</a
           >: nome, função e valor [A]
         </h2>
+        <dl>
+          <dt>objetivo</dt>
+          <dd>
+            pessoas que usam tecnologia assistiva entenderem todos os componentes
+          </dd>
+          <dt>tarefa</dt>
+          <dd>dê aos componentes nomes, funções, estados e valores corretos</dd>
+        </dl>
         <label id="l1" for="f3">Me notifique em</label>
         <select name="amt" id="f3" aria-labelledby="l1 f3 l2">
           <option value="1">1</option>
@@ -48,10 +74,18 @@
         <h2>
           <a
             target="”_blank”"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name"
             >diretiva 2.5.3</a
-          >: rótulo no nome acessível
+          >: rótulo no nome acessível [A]
         </h2>
+        <dl>
+          <dt>objetivo</dt>
+          <dd>
+            o rótulo visual dos controles é um gatilho para ativação de fala
+          </dd>
+          <dt>tarefa</dt>
+          <dd>dê aos componentes nomes, funções, estados e valores corretos</dd>
+        </dl>
         <fieldset>
           <legend>linguagens disponíveis:</legend>
           <button
@@ -75,6 +109,20 @@
           >
             es
           </button>
+          <button
+            class="btn-small"
+            aria-label="francês"
+            onclick="changeDocumentLang('fr')"
+          >
+            fr
+          </button>
+          <button
+            class="btn-small"
+            aria-label="chinês"
+            onclick="changeDocumentLang('zh')"
+          >
+            zh
+          </button>
         </fieldset>
       </section>
       <section class="hidden" id="identificar-o-obejtivo">
@@ -83,13 +131,140 @@
             target="”_blank”"
             href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
             >diretiva 1.3.6</a
-          >: identificar o objetivo
+          >: identificar o objetivo [AAA]
         </h2>
+        <dl>
+          <dt>objetivo</dt>
+          <dd>
+            é mais fácil operar e navegar pelo conteúdo
+          </dd>
+          <dt>tarefa</dt>
+          <dd>indique o significado de todos os controles e outras informações importantes, quando disponíveis</dd>
+        </dl>
         <form role="search">
           <label for="product-search" id="search-label">Procurar</label>
-          <input id="product-search" placeholder="título, autor ou isbn" type="text">
+          <input
+            id="product-search"
+            placeholder="título, autor ou isbn"
+            type="text"
+          />
           <button type="submit">encontrar livros</button>
         </form>
+      </section>
+      <section class="hidden" id="texto-grande">
+        <h2>exemplo texto grande</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
+          sagittis dui. Integer vel tristique dolor, pretium viverra elit.
+          Vestibulum eget lacus id nisl tempor commodo. Aenean euismod eu sem ut
+          tristique. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Maecenas maximus sed massa eu suscipit. Curabitur
+          scelerisque ipsum eget est faucibus, sit amet elementum lorem porta.
+          Maecenas porttitor dapibus posuere. Cras nisl dui, commodo sed
+          consequat vitae, suscipit eu lacus. Aliquam posuere vulputate lacinia.
+        </p>
+        <p>
+          Sed lectus metus, tincidunt ut arcu quis, elementum rutrum ligula.
+          Proin facilisis, ipsum eu imperdiet volutpat, augue urna pharetra
+          diam, vitae vehicula elit ipsum sed nisl. Integer et ex velit. Aenean
+          quis erat aliquam, viverra elit ultricies, iaculis nisl. Morbi sem
+          lacus, cursus ac tempor in, bibendum ultrices nisl. Etiam pretium
+          aliquet tempus. Ut convallis sapien a ornare pretium. Duis sed massa
+          cursus nisl tempor euismod sit amet a dui. Aliquam accumsan nulla ut
+          velit semper, nec lobortis dui vulputate. Praesent fermentum vitae
+          risus vel dictum. Donec lacus nulla, venenatis ut tortor nec, laoreet
+          sagittis mi. Cras est leo, faucibus in blandit sit amet, bibendum sit
+          amet mauris. Sed dignissim pharetra arcu, sit amet commodo enim congue
+          eget. Nunc condimentum imperdiet pellentesque. In id ultrices elit.
+          Praesent facilisis fringilla justo.
+        </p>
+        <p>
+          Donec tincidunt nulla rhoncus sapien efficitur fringilla. Aenean
+          sagittis felis in neque fermentum mollis. Ut auctor ex leo, in rutrum
+          eros aliquet aliquet. Proin tempus urna eget dui consectetur, ac
+          rhoncus ligula egestas. Aliquam luctus arcu ac maximus porttitor.
+          Donec quam neque, tempor in augue et, tempus interdum risus. Quisque
+          efficitur gravida nisi, at eleifend sem vehicula eu. Nulla a risus
+          eget mauris volutpat placerat vitae a leo. Duis auctor, nunc sit amet
+          pellentesque aliquet, nisi purus vestibulum sem, id egestas sem massa
+          a lectus. Mauris molestie cursus urna non malesuada. Cras mattis nulla
+          sollicitudin dapibus vehicula. Sed elementum urna at eros facilisis
+          rutrum.
+        </p>
+        <p>
+          Ut a pharetra enim. Pellentesque consectetur at nunc ut maximus. Sed
+          eget arcu vitae urna consectetur semper. Phasellus leo leo, maximus
+          sit amet feugiat sed, scelerisque sit amet nunc. Pellentesque et sem
+          sed erat dapibus eleifend. Donec non orci sit amet massa sodales
+          aliquet. Integer nec sodales massa. Cras non luctus tellus.
+        </p>
+        <p>
+          Curabitur aliquam, enim vel blandit varius, velit lacus feugiat
+          mauris, id dapibus tortor purus eu nisl. Nunc et mi commodo, dignissim
+          nisl non, placerat ex. Mauris volutpat elit quis tempor placerat.
+          Aenean a turpis magna. Morbi rutrum purus ac orci rhoncus, quis congue
+          lectus tristique. Nulla quis consectetur sapien, ut iaculis eros.
+          Quisque mollis risus id massa interdum posuere. Vivamus vulputate
+          ligula viverra scelerisque accumsan. Aliquam cursus, quam sit amet
+          commodo dictum, dolor eros viverra enim, eu viverra turpis metus nec
+          nulla. Praesent in posuere mauris, at convallis magna.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
+          sagittis dui. Integer vel tristique dolor, pretium viverra elit.
+          Vestibulum eget lacus id nisl tempor commodo. Aenean euismod eu sem ut
+          tristique. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Maecenas maximus sed massa eu suscipit. Curabitur
+          scelerisque ipsum eget est faucibus, sit amet elementum lorem porta.
+          Maecenas porttitor dapibus posuere. Cras nisl dui, commodo sed
+          consequat vitae, suscipit eu lacus. Aliquam posuere vulputate lacinia.
+        </p>
+        <p>
+          Sed lectus metus, tincidunt ut arcu quis, elementum rutrum ligula.
+          Proin facilisis, ipsum eu imperdiet volutpat, augue urna pharetra
+          diam, vitae vehicula elit ipsum sed nisl. Integer et ex velit. Aenean
+          quis erat aliquam, viverra elit ultricies, iaculis nisl. Morbi sem
+          lacus, cursus ac tempor in, bibendum ultrices nisl. Etiam pretium
+          aliquet tempus. Ut convallis sapien a ornare pretium. Duis sed massa
+          cursus nisl tempor euismod sit amet a dui. Aliquam accumsan nulla ut
+          velit semper, nec lobortis dui vulputate. Praesent fermentum vitae
+          risus vel dictum. Donec lacus nulla, venenatis ut tortor nec, laoreet
+          sagittis mi. Cras est leo, faucibus in blandit sit amet, bibendum sit
+          amet mauris. Sed dignissim pharetra arcu, sit amet commodo enim congue
+          eget. Nunc condimentum imperdiet pellentesque. In id ultrices elit.
+          Praesent facilisis fringilla justo.
+        </p>
+        <p>
+          Donec tincidunt nulla rhoncus sapien efficitur fringilla. Aenean
+          sagittis felis in neque fermentum mollis. Ut auctor ex leo, in rutrum
+          eros aliquet aliquet. Proin tempus urna eget dui consectetur, ac
+          rhoncus ligula egestas. Aliquam luctus arcu ac maximus porttitor.
+          Donec quam neque, tempor in augue et, tempus interdum risus. Quisque
+          efficitur gravida nisi, at eleifend sem vehicula eu. Nulla a risus
+          eget mauris volutpat placerat vitae a leo. Duis auctor, nunc sit amet
+          pellentesque aliquet, nisi purus vestibulum sem, id egestas sem massa
+          a lectus. Mauris molestie cursus urna non malesuada. Cras mattis nulla
+          sollicitudin dapibus vehicula. Sed elementum urna at eros facilisis
+          rutrum.
+        </p>
+        <p>
+          Ut a pharetra enim. Pellentesque consectetur at nunc ut maximus. Sed
+          eget arcu vitae urna consectetur semper. Phasellus leo leo, maximus
+          sit amet feugiat sed, scelerisque sit amet nunc. Pellentesque et sem
+          sed erat dapibus eleifend. Donec non orci sit amet massa sodales
+          aliquet. Integer nec sodales massa. Cras non luctus tellus.
+        </p>
+        <p>
+          Curabitur aliquam, enim vel blandit varius, velit lacus feugiat
+          mauris, id dapibus tortor purus eu nisl. Nunc et mi commodo, dignissim
+          nisl non, placerat ex. Mauris volutpat elit quis tempor placerat.
+          Aenean a turpis magna. Morbi rutrum purus ac orci rhoncus, quis congue
+          lectus tristique. Nulla quis consectetur sapien, ut iaculis eros.
+          Quisque mollis risus id massa interdum posuere. Vivamus vulputate
+          ligula viverra scelerisque accumsan. Aliquam cursus, quam sit amet
+          commodo dictum, dolor eros viverra enim, eu viverra turpis metus nec
+          nulla. Praesent in posuere mauris, at convallis magna.
+        </p>
       </section>
     </main>
     <footer>
@@ -97,5 +272,6 @@
       <button onclick="showNextSection()" id="next">próximo</button>
     </footer>
     <script src="main.js"></script>
+    <script src="colors.js"></script>
   </body>
 </html>
