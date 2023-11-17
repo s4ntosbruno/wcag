@@ -1,0 +1,31 @@
+1. introdução, o que é acessibilidade?
+
+Acessibilidade é a pratica de fazer com que seus sites sejam utilizáveis pelo maior
+número de pessoas. Geralmente pensamos que a acessibilidade é só para as 
+pessoas desabilitadas, mas desenvolver um site  acessível faz com que a 
+experiência de todos sejam melhor, seja usuários de dispositivos móveis ou 
+aqueles com conexões ruins.
+
+Acessibilidade também é tratar todos igualmente, dando a mesmas oportunidades
+para todo mundo, não importa a habilidade ou situação da pessoas. Assim como é errado
+excluir alguém de um prédio por estar em uma cadeira de rodas é errado excluir alguém
+de um site por ser deficiente visual.
+
+Dar acessibilidade é lei em alguns países, o que pode abrir mercados siginificativos.
+
+2. Web Content Accessibility Guidelines
+
+wcag são diretizes de acessibilidade para conteúdo na web, foram desenvolvidas
+em cooperação com o indivíduos e empresas do mundo inteiro, com o objetivo de
+fornecer um único padrão compartilhado para acessibilidade de conteúdo da web
+ que atenda às necessidades de indivíduos, organizações e governos internacionalmente.
+
+o guia fornece diversas camadas de informação, são elas:
+
+principios: o mais importante são os quatro principios, que dão a base para a 
+acessibilidade na web: perceptível, operável, compreensível e robusto.
+
+diretizes: abaixo dos principios temos as diretizes. Fornecem o objetivo básico
+que devemos trabalhar para tornar o conteúdo mais acessível a usuário com
+diferentes deficiências. As diretrizes não são testáveis, mas fornecem informações
+para que o desenvolver compreenda os critérios e implemente a melhor técnica.

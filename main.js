@@ -1,4 +1,6 @@
 const sections = [
+  "introducao",
+  "wcag",
   "idioma-da-pagina",
   "nome_funcao_valor",
   "rotulo-no-nome-acessivel",
