@@ -19,18 +19,26 @@ body {
   background-color: var(--tertiary-color);
   color: var(--secundary-color);
   font-size: 24px;
-  padding: 0 2rem;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 100%;
   background-color: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+}
+
+main {
+  padding: 6rem 1rem;
 }
 
 footer {
@@ -38,11 +46,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: inherit;
-  padding: 1rem 0;
-}
-
-main {
-  padding: 6rem 0;
+  padding: 1rem 1rem;
 }
 
 h1 {
@@ -75,10 +79,6 @@ button:disabled {
   padding: 0 0.5em;
 }
 
-.btn-medium {
-  padding: 0 0.7em;
-}
-
 .hidden {
   display: none;
 }
@@ -96,12 +96,22 @@ fieldset {
   width: fit-content;
 }
 
-dt { 
+dt {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 425px) {
-  body {
-    font-size: 16px;
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  main {
+    padding: 10rem 1rem 5rem 1rem;
+  }
+
+  footer,
+  h2 {
+    text-align: center;
   }
 }

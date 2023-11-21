@@ -1,8 +1,8 @@
-1. introdução, o que é acessibilidade?
+introdução, o que é acessibilidade?
 
 Acessibilidade é a pratica de fazer com que seus sites sejam utilizáveis pelo maior
 número de pessoas. Geralmente pensamos que a acessibilidade é só para as 
-pessoas desabilitadas, mas desenvolver um site  acessível faz com que a 
+pessoas desabilitadas, mas desenvolver um site acessível faz com que a 
 experiência de todos sejam melhor, seja usuários de dispositivos móveis ou 
 aqueles com conexões ruins.
 
@@ -22,10 +22,23 @@ fornecer um único padrão compartilhado para acessibilidade de conteúdo da web
 
 o guia fornece diversas camadas de informação, são elas:
 
+PRINCIPIOS
+
 principios: o mais importante são os quatro principios, que dão a base para a 
 acessibilidade na web: perceptível, operável, compreensível e robusto.
 
-perceptível: informações e interfaces deves ser facilmente percebidos
+perceptível: informações e os componentes da interface deves ser facilmente percebidos.
+os usuário devem ser capazes de perceber a informação apresentada, ela não pode ser
+invisível para todos os seus sentidos
+
+operável: componentes de interfaces e de navegação devem ser usáveis. 
+Isso significa que os usuário devem ser capazes de operar a interface, 
+independente do usuário. a interface não pode exigir interação que um usuário
+não possa realizar.
+
+compreensível: informações e o use da interface devem ser faceis de entender;
+usuário deve conseguir entender a informação e a operação da interface, o conteúdo
+ou a operação não deeve estar além do seu entendimento
 
 robosto: conteúdo deve ser robosto o sufiente para que várias tecnologias assistitivas
 funcionem corretamente, visando as atualização. Se as tecnologias evoluirem, o sistema
@@ -35,3 +48,22 @@ diretizes: abaixo dos principios temos as diretizes. Fornecem o objetivo básico
 que devemos trabalhar para tornar o conteúdo mais acessível a usuário com
 diferentes deficiências. As diretrizes não são testáveis, mas fornecem informações
 para que o desenvolver compreenda os critérios e implemente a melhor técnica.
+
+DIRETRIZES
+
+abaixo dos princípios estão as diretrizes. As 13 diretrizes mostram os objetivos
+básicos que os desenvolvedores devem trabalhar. Elas não são testáveis, mas dão a
+base o os objetivo gerais para os desenvolvedores entenderem os critérios de sucesso
+e implementarem as técnicas.
+
+CRITERIOS DE SUCESSO
+
+para cada diretriz, critérios são fornecidos para que o wcag seja utilizado onde 
+requisitos e testes são necesários, como design. Os critérios são divididos em três níveis
+A, AA e AAA.
+
+TECNICAS SUFICIENTES E AUXILIARES
+
+Para cada uma das diretrizes e critérios de sucesso do próprio documento WCAG 2.1, exitem várias técnicas
+documentadas. Possuem duas categorias, as suficientes e as auxilires, as auxilires vão além do que é necessário
+no critério de sucesso, onde algumas falhas são conhecidas.
