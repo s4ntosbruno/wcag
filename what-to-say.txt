@@ -25,6 +25,12 @@ o guia fornece diversas camadas de informação, são elas:
 principios: o mais importante são os quatro principios, que dão a base para a 
 acessibilidade na web: perceptível, operável, compreensível e robusto.
 
+perceptível: informações e interfaces deves ser facilmente percebidos
+
+robosto: conteúdo deve ser robosto o sufiente para que várias tecnologias assistitivas
+funcionem corretamente, visando as atualização. Se as tecnologias evoluirem, o sistema
+precisa ficar acessível.
+
 diretizes: abaixo dos principios temos as diretizes. Fornecem o objetivo básico
 que devemos trabalhar para tornar o conteúdo mais acessível a usuário com
 diferentes deficiências. As diretrizes não são testáveis, mas fornecem informações
