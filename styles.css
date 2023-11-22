@@ -18,7 +18,7 @@ body {
   font-family: "Roboto Mono", sans-serif;
   background-color: var(--tertiary-color);
   color: var(--secundary-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -100,10 +100,18 @@ dt {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 1.5rem;
+  }
+
   header {
     flex-direction: column;
     padding-bottom: 1rem;
+  }
+
+  header div {
+    text-align: center;
   }
 
   main {
@@ -113,5 +121,35 @@ dt {
   footer,
   h2 {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 7rem 1rem 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 8rem 1rem 4rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 9rem 1rem 4rem 1rem;
   }
 }
