@@ -34,11 +34,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 main {
-  padding: 6rem 2rem;
+  padding: 6rem 5rem;
 }
 
 footer {
@@ -46,7 +46,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: inherit;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
 }
 
 h1 {

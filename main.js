@@ -1,11 +1,11 @@
 const sections = [
   "introducao",
-  "nome_acessivel",
+  "nome-acessivel",
   "wcag",
   "principios",
   "diretrizes",
   "identificar-o-objetivo",
-  "rotulo-no-nome-acessivel",
+  "rotulo-no-nome",
   "idioma-da-pagina",
   "nome-funcao-valor",
 ];
