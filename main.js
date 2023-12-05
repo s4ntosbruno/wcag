@@ -1,11 +1,13 @@
 const sections = [
   "introducao",
+  "nome_acessivel",
   "wcag",
-  "idioma-da-pagina",
-  "nome_funcao_valor",
+  "principios",
+  "diretrizes",
+  "identificar-o-objetivo",
   "rotulo-no-nome-acessivel",
-  "identificar-o-obejtivo",
-  "texto-grande"
+  "idioma-da-pagina",
+  "nome-funcao-valor",
 ];
 
 window.onload = onInit();

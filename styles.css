@@ -34,11 +34,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 main {
-  padding: 6rem 1rem;
+  padding: 6rem 2rem;
 }
 
 footer {
@@ -46,7 +46,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: inherit;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
 }
 
 h1 {
@@ -115,7 +115,7 @@ dt {
   }
 
   main {
-    padding: 10rem 1rem 5rem 1rem;
+    padding: 10rem 2rem 5rem 2rem;
   }
 
   footer,
@@ -126,11 +126,11 @@ dt {
 
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   main {
-    padding: 7rem 1rem 4rem 1rem;
+    padding: 12rem 2rem 6rem 2rem;
   }
 }
 
@@ -150,6 +150,6 @@ dt {
   }
 
   main {
-    padding: 9rem 1rem 4rem 1rem;
+    padding: 10rem 1rem 5rem 1rem;
   }
 }
