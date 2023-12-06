@@ -25,7 +25,7 @@ Dar acessibilidade é lei em alguns países, o que pode abrir mercados siginific
 
 NOME ACESSIVEL
 
-primeiro slide é sobre algo que vamos ouvir muito em acessibilidade
+primeiro slide é sobre algo que vamos ouvir muito no wcag
 é o que as tecnologias assistivas usam para entender e interagir com o elemento na tela.
 garante que os elementos sejam entendidos por deficientes visuais ou os que dependem de
 tecnologia assistiva.
@@ -46,11 +46,16 @@ o objetivo é dar um único padrão para acessibilidade de conteúdo da internet
 podendo ser usado por qualquer pessoa, empresa ou governo.
 
 é tipo um piramide, onde a base são os 4 principios,
+
 acima temos as diretrizes, que dão os objetivos de desenvolvimento
-depois temos os critérios de sucesso, onde podemos testar individualmente 
+
+depois temos os critérios de sucesso, onde podemos testar individualmente
 cada parte das diretrizes, cada diretriz tem vários critérios
+
 aí temos as técnicas, cada critério tem váris técnicas, as auxilires são as não
-necessárias, e as sufientes são as que realmente batem o critério de sucesso 
+necessárias, e as sufientes são as que realmente batem o critério de sucesso.
+
+A adaptação às normas da WCAG está no contrato de parceria com o itaú.
 
 ----------------------------------------------------------------------------------
 
@@ -76,10 +81,6 @@ acima dos princípios estão as diretrizes. As 13 diretrizes mostram os objetivo
 básicos que os desenvolvedores devem trabalhar. Elas não são testáveis, mas dão a
 base o os objetivo gerais para os desenvolvedores entenderem os critérios de sucesso
 e implementarem as técnicas.
-
-escolhemos 4 critérios de sucesso para trabalhar
-os 'A' depois do nome da diretiva indicam a dificuldade do critério
-exitem 3 dificuldades, A, AA e AAA
 
 1.3 ADAPTAVEL
 principio 1 - perceptível
@@ -109,56 +110,67 @@ técnicas para concatenar nomes
 
 ----------------------------------------------------------------------------------
 
+escolhemos 4 critérios de sucesso para trabalhar
+
+os 'A' depois do nome da diretiva indicam a dificuldade do critério
+exitem 3 dificuldades, A, AA e AAA
+
 CRITERIO 1.3.6 IDENTIFICAR O OBJETIVO
+dificuldade AAA
 principio 1 - perceptível
 diretiva 2.5 - modalidade de input
-tecnica ARIA11
-tecnica serve para fornecer acesso programático às seções de uma página.
 exemplo adiciona uma role para o grupo de elementos responsáveis pela pesquisa.
 agora temos um tag search
+tecnica ARIA11
+tecnica serve para fornecer acesso programático às seções de uma página.
+
 
 ----------------------------------------------------------------------------------
 
 CRITERIO 2.5.3 ROTULO NO NOME
+
+dificuldade A
 principio 2 - operável
-diretiva 5.6 - adaptavel
+diretiva 2.5 - modalidades de input
+exemplo adiciona um aria-label pode ser usado para criar
+um novo nome que inclua o rótulo visível.
 tecnica G208
 técnica garante que os usuários de entrada de voz possam operar
 o conteúdo da web de maneira confiável
-exemplo adiciona um aria-label pode ser usado para criar
-um novo nome que inclua o rótulo visível
 
 ----------------------------------------------------------------------------------
 
 CRITERIO 3.1.1 IDIOMA DA PAGINA
 principio 3 - compreensível
 diretiva 3.1 - legivel
+exemplo define a lang do documento
 tecnica H57
 técnica serve para identificar o idioma padrão de um documento
 fornecendo o atributo lang no elemento html
-exemplo define a lang do documento
 
 ----------------------------------------------------------------------------------
 
 CRITERIO 4.1.2 NOME FUNCAO E VALOR
 principio 4 - robusto
 diretiva 4.1 - compativel
+exemplo de aria-labelledby com múltiplas referências concatenadas.
+label da foco.
 tecnica ARIA16
 técnica serve para fornecer nomes para controles
 de interface de usuário que possam ser lidos por tecnologia assistiva
 sempre colocar value nos controles
-exemplo de aria-labelledby com múltiplas referências concatenadas.
-label da foco.
+
 
 ----------------------------------------------------------------------------------
 
 EXTRAS
+
 testes são para cada técnica, são variados, alguns podem usar técnologias assistivas, 
 outros só são práticos, 
 fazer uma techtalk testando algumas técnicas para os critérios escolhidos
 
 curso de graça de intrudução á acessibilidade da W3C, para quem prefere ver do que ler,
-mostra bastante as situações práticas e usos de tecnologias assistivas
+mostra bastante as situações práticas e usos de tecnologias assistivas em mundo
 
 componentes do angular material já são acessíveis, 
 utilizar mais o angular material com os designers, 
