@@ -124,7 +124,6 @@ agora temos um tag search
 tecnica ARIA11
 tecnica serve para fornecer acesso programático às seções de uma página.
 
-
 ----------------------------------------------------------------------------------
 
 CRITERIO 2.5.3 ROTULO NO NOME
@@ -159,7 +158,6 @@ tecnica ARIA16
 técnica serve para fornecer nomes para controles
 de interface de usuário que possam ser lidos por tecnologia assistiva
 sempre colocar value nos controles
-
 
 ----------------------------------------------------------------------------------
 

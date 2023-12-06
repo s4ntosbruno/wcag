@@ -144,6 +144,16 @@ dt {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 12rem 1rem 6rem 1rem;
+  }
+}
+
 @media only screen and (max-width: 285px) {
   body {
     font-size: 1rem;
