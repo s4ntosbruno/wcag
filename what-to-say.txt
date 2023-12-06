@@ -153,12 +153,15 @@ label da foco.
 ----------------------------------------------------------------------------------
 
 EXTRAS
-testes são para cada técnica, são variados, alguns podem usar técnologias assistivas, outros só são práticos,
+testes são para cada técnica, são variados, alguns podem usar técnologias assistivas, 
+outros só são práticos, 
 fazer uma techtalk testando algumas técnicas para os critérios escolhidos
 
-curso de graça de intrudução á acessibilidade da W3C, para quem prefere ver do que ler, mostra bastante as situações práticas e usos de tecnologias assistivas
+curso de graça de intrudução á acessibilidade da W3C, para quem prefere ver do que ler,
+mostra bastante as situações práticas e usos de tecnologias assistivas
 
-componentes do angular material já são acessíveis, utilizar mais o angular material com os designers, 
+componentes do angular material já são acessíveis, 
+utilizar mais o angular material com os designers, 
 pois ele possuem componentes acessíveis e testados
 
 página de acessibilidade do angular material
