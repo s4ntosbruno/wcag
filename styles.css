@@ -38,7 +38,7 @@ header {
 }
 
 main {
-  padding: 6rem 5rem;
+  padding: 10rem 5rem;
 }
 
 footer {
@@ -111,7 +111,7 @@ dt {
   }
 
   main {
-    padding: 10rem 2rem 5rem 2rem;
+    padding: 10rem 2rem;
   }
 
   footer,
@@ -131,7 +131,7 @@ dt {
   }
 
   main {
-    padding: 10rem 2rem 5rem 2rem;
+    padding: 10rem 2rem;
   }
 
   footer,
@@ -141,12 +141,8 @@ dt {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    font-size: 1.5rem;
-  }
-
   main {
-    padding: 12rem 2rem 6rem 2rem;
+    padding: 12rem 2rem;
   }
 }
 
@@ -156,26 +152,13 @@ dt {
   }
 
   main {
-    padding: 8rem 1rem 4rem 1rem;
+    padding: 12rem 1rem;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-    font-size: 1rem;
-  }
-
+@media only screen and (max-width: 315px) {
   main {
-    padding: 12rem 1rem 6rem 1rem;
+    padding: 20rem 1rem;
   }
 }
 
-@media only screen and (max-width: 285px) {
-  body {
-    font-size: 1rem;
-  }
-
-  main {
-    padding: 16rem 1rem 8rem 1rem;
-  }
-}
