@@ -8,6 +8,7 @@ const sections = [
   "rotulo-no-nome",
   "idioma-da-pagina",
   "nome-funcao-valor",
+  "links-e-extras",
 ];
 
 window.onload = onInit();

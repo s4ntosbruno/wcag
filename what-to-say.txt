@@ -1,6 +1,6 @@
 ACESSIBILIDADE
 
-Acessibilidade é a prática de garantir que produtos, serviços e ambiente sejam
+Acessibilidade é a prática de garantir que produtos, serviços e ambientes sejam
 projetados e desenvolvidos para serem utilizados por todas as pessoas,
 independentemente de suas habilidades, limitações ou características individuais.
 Isso envolve a criação de condições que permitam o acesso e a participação de todos,
@@ -11,49 +11,53 @@ Na área digital, a acessibilidade se concentra em tornar site, aplicativos e co
 online acessíveis para pessoas com diferentes necessidades. isso inclui a implementação
 de recursos como descrições de imagens para pessoas cegas, ou com baixa visão
 compatibilidade com leitores de tela, garantia de contraste para facilitar a leitura,
-navegação via teclado para quem não pode usar um mouse, entre outras práticas.
+navegação via teclado para quem não pode usar um mouse, entre outras.
 
 Assim como é errado excluir alguém de um prédio por estar em uma cadeira de rodas é 
-errado excluir alguém de um site por ser deficiente visual.
+errado excluir alguém de um sistema por ser deficiente visual.
+
+Acessibilidade tbm ajuda no seo, o que não é muito útil para o sistema, mas para o site
+de divulgação, garante que as pesquisas sobre financeiro cheguem no nosso site.
 
 Dar acessibilidade é lei em alguns países, o que pode abrir mercados siginificativos.
 
-
 ----------------------------------------------------------------------------------
-
 
 NOME ACESSIVEL
 
-é o que as tecnologias assistivas usam para entender e interagir com o elemento.
+primeiro slide é sobre algo que vamos ouvir muito em acessibilidade
+é o que as tecnologias assistivas usam para entender e interagir com o elemento na tela.
 garante que os elementos sejam entendidos por deficientes visuais ou os que dependem de
 tecnologia assistiva.
 exemplo: o alt da imagem se torna uma descrição da imagem
 exemplo2: ao criar um botão, dar uma nome bom que ajude os usuários
-exemplo3: falar dos botões de troca de cor
-a entenderem a ação do botão.
+exemplo3: falar dos botões de troca de cor.
 
 aria-describedby: É usado para estabelecer uma relação entre grupos de elementos
 e o texto que os descreve.
 
-
 ----------------------------------------------------------------------------------
-
 
 DIRETRIZES DE ACESSIBILIDADE PARA CONTEUDO DA WEB
 
-wcag são diretizes de acessibilidade para conteúdo na web, foram desenvolvidas
-em cooperação com o indivíduos e empresas do mundo inteiro, com o objetivo de
-fornecer um único padrão compartilhado para acessibilidade de conteúdo da web
-que atenda às necessidades de indivíduos, organizações e governos internacionalmente.
+wcag é um documento listando as diretizes de acessibilidade para conteúdo na internet,
+foram desenvolvidas pessoas do mundo inteiro, 
+o objetivo é dar um único padrão para acessibilidade de conteúdo da internet,
+podendo ser usado por qualquer pessoa, empresa ou governo.
 
+é tipo um piramide, onde a base são os 4 principios,
+acima temos as diretrizes, que dão os objetivos de desenvolvimento
+depois temos os critérios de sucesso, onde podemos testar individualmente 
+cada parte das diretrizes, cada diretriz tem vários critérios
+aí temos as técnicas, cada critério tem váris técnicas, as auxilires são as não
+necessárias, e as sufientes são as que realmente batem o critério de sucesso 
 
 ----------------------------------------------------------------------------------
-
 
 PRINCIPIOS
 
 principios: o mais importante são os quatro principios, que dão a base para a 
-acessibilidade na web: perceptível, operável, compreensível e robusto.
+acessibilidade na web.
 
 1 perceptível: informações e os componentes da interface deves ser facilmente percebidos.
 
@@ -64,9 +68,7 @@ acessibilidade na web: perceptível, operável, compreensível e robusto.
 4 robosto: conteúdo deve ser robosto o sufiente para que várias tecnologias assistitivas
 funcionem corretamente.
 
-
 ----------------------------------------------------------------------------------
-
 
 DIRETRIZES
 
@@ -75,82 +77,91 @@ básicos que os desenvolvedores devem trabalhar. Elas não são testáveis, mas 
 base o os objetivo gerais para os desenvolvedores entenderem os critérios de sucesso
 e implementarem as técnicas.
 
+escolhemos 4 critérios de sucesso para trabalhar
+os 'A' depois do nome da diretiva indicam a dificuldade do critério
+exitem 3 dificuldades, A, AA e AAA
+
 1.3 ADAPTAVEL
+principio 1 - perceptível
 atalhos de teclado, simbolos familiares, features mais simples
 beneficia pessoas com deficiencia de memória, atenção, linguagem
 exemplo ctrl K no discord
 
 2.5 MODALIDADES DE INPUT
+principio 2 - operável
 ir além do teclado, todas as features deve ser acessíveis atraves de ponteiros,
 como mouse, dedo interagindo com uma tela touch, caneta ou um ponteiro a laser e
 até a voz.
-exemplo exclusão de um item sem elemento
+beneficia pessoas com deficiencia de movimento
+exemplo no nosso sistema, exclusão de um item sem elemento em uma tabela
 
 3.1 LEGIVEL
+principio 3 - compreensão
 permitir que o conteúdo do texto seja lido pelos usuário e por tecnologias assistitivas.
 exemplo adição de frase em outra linguagem
 
 4.1 COMPATIVEL
+principio 4 - robusto
 garantir que as tecnologia assistivas possam coletar informações e se comunicarem
 com os controles de interface.
 exemplo dar nomes corretos aos elementos
 técnicas para concatenar nomes
 
-
 ----------------------------------------------------------------------------------
 
-
-CRITERIO 1.3.6
-
-principio 1 - operável
+CRITERIO 1.3.6 IDENTIFICAR O OBJETIVO
+principio 1 - perceptível
 diretiva 2.5 - modalidade de input
 tecnica ARIA11
-
-tecnica serve para fornecer acesso progrático às seções de uma página.
+tecnica serve para fornecer acesso programático às seções de uma página.
 exemplo adiciona uma role para o grupo de elementos responsáveis pela pesquisa.
-
+agora temos um tag search
 
 ----------------------------------------------------------------------------------
 
-
-CRITERIO 2.5.3
-
+CRITERIO 2.5.3 ROTULO NO NOME
 principio 2 - operável
 diretiva 5.6 - adaptavel
 tecnica G208
-
 técnica garante que os usuários de entrada de voz possam operar
 o conteúdo da web de maneira confiável
-
 exemplo adiciona um aria-label pode ser usado para criar
 um novo nome que inclua o rótulo visível
 
 ----------------------------------------------------------------------------------
 
-
-CRITERIO 3.1.1
-
+CRITERIO 3.1.1 IDIOMA DA PAGINA
 principio 3 - compreensível
 diretiva 3.1 - legivel
 tecnica H57
-
 técnica serve para identificar o idioma padrão de um documento
 fornecendo o atributo lang no elemento html
-
 exemplo define a lang do documento
-
 
 ----------------------------------------------------------------------------------
 
-
-CRITERIO 4.1.2
-
+CRITERIO 4.1.2 NOME FUNCAO E VALOR
 principio 4 - robusto
 diretiva 4.1 - compativel
 tecnica ARIA16
-
 técnica serve para fornecer nomes para controles
 de interface de usuário que possam ser lidos por tecnologia assistiva
-
+sempre colocar value nos controles
 exemplo de aria-labelledby com múltiplas referências concatenadas.
 label da foco.
+
+----------------------------------------------------------------------------------
+
+EXTRAS
+testes são para cada técnica, são variados, alguns podem usar técnologias assistivas, outros só são práticos,
+fazer uma techtalk testando algumas técnicas para os critérios escolhidos
+
+curso de graça de intrudução á acessibilidade da W3C, para quem prefere ver do que ler, mostra bastante as situações práticas e usos de tecnologias assistivas
+
+componentes do angular material já são acessíveis, utilizar mais o angular material com os designers, 
+pois ele possuem componentes acessíveis e testados
+
+página de acessibilidade do angular material
+
+html semântico, utilizar elementos conforme seu significado, não utilizar div para tudo.
+

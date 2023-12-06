@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="logo.ico" />
-    <title>wcag</title>
-  </head>
+    <link rel="icon" href="icon.png" />
 
+    <title>WCAG</title>
+  </head>
   <body>
     <header>
-      <h1>wcag</h1>
+      <h1>WCAG 2.2</h1>
       <div>
         <button class="btn-small" onclick="changeColors(0)">R</button>
         <button class="btn-small" onclick="changeColors(1)">G</button>
@@ -27,29 +27,26 @@
         <h2>O que é acessibilidade?</h2>
         <p>
           Acessibilidade é a prática de garantir que produtos, serviços e
-          ambiente sejam projetados e desenvolvidos para serem utilizados por
+          ambientes sejam projetados e desenvolvidos para serem utilizados por
           todas as pessoas, independentemente de suas habilidades, limitações ou
-          características individuais. Isso envolve a criação de condições que
-          permitam o acesso e a participação de todos, incluindo pessoas com
-          deficiências físicas, sensoriais, cognitivas, intelectuais ou outras
-          diversas condições.
+          características individuais.
         </p>
         <p>
-          Na área digital, a acessibilidade se concentra em tornar site,
+          Na área digital, a acessibilidade se concentra em tornar sites,
           aplicativos e conteúdos online acessíveis para pessoas com diferentes
-          necessidades. isso inclui a implementação de recursos como descrições
-          de imagens para pessoas cegas, ou com baixa visão, compatibilidade com
-          leitores de tela, garantia de contraste para facilitar a leitura,
-          navegação via teclado para quem não pode usar um mouse, entre outras
-          práticas.
+          necessidades.
         </p>
-        <p>
-          Dar acessibilidade é lei em alguns países, o que pode abrir mercados
-          siginificativos.
-        </p>
+        <p>Dar acessibilidade é lei em alguns países.</p>
+        <p>Melhora o SEO.</p>
       </section>
       <section class="hidden" id="nome-acessivel">
-        <h2>Nome Acessível</h2>
+        <h2>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name"
+          >
+            Nome Acessível</a
+          >
+        </h2>
         <p>
           É a atribuição de um nome descritivo e significativo a um elemento da
           interface, como um link, botão, imagem ou qualquer outro componente
@@ -66,8 +63,14 @@
               <li>
                 referenciando o conteúdo com <code>aria-labelledby</code>.
               </li>
-              <li>adicionando o elemento label nos controles de formulário.</li>
-              <li>adicionando o elemento legenda nos fildsets.</li>
+              <li>
+                adicionando o elemento <code>label</code> nos controles de
+                formulário.
+              </li>
+              <li>
+                adicionando o elemento <code>legend</code> nos
+                <code>fieldsets</code>.
+              </li>
               <li>adicionando legendas nas imagens e tabelas.</li>
               <li>nomes alternativos de títulos e placeholders.</li>
             </ul>
@@ -75,11 +78,15 @@
         </ul>
       </section>
       <section class="hidden" id="wcag">
-        <h2>Diretrizes de Acessibilidade para Conteúdo da Web</h2>
+        <h2>
+          <a href="https://www.w3.org/TR/WCAG22/">
+            Diretrizes de Acessibilidade para Conteúdo da Web</a
+          >
+        </h2>
         <p>
-          WCAG são diretizes de acessibilidade para conteúdo na web, foram
-          desenvolvidas em cooperação com o indivíduos e empresas do mundo
-          inteiro, com o Objetivo de fornecer um único padrão compartilhado para
+          WCAG são diretrizes de acessibilidade para conteúdo na web, foram
+          desenvolvidas em cooperação com indivíduos e empresas do mundo
+          inteiro, para fornecer um único padrão compartilhado para
           acessibilidade de conteúdo da web que atenda às necessidades de
           indivíduos, organizações e governos internacionalmente.
         </p>
@@ -88,24 +95,25 @@
           <li>
             <p>
               <strong>Princípios</strong> - Fornecem a base para a
-              acessibilidade na Web
+              acessibilidade na Web.
             </p>
           </li>
           <li>
-            <strong>Diretrizes</strong> - Mostram os Objetivos básicos que os
+            <strong>Diretrizes</strong> - Mostram os objetivos básicos que os
             desenvolvedores devem trabalhar.
           </li>
           <li>
             <p>
               <strong>Critérios de Sucesso</strong> - Para cada diretriz,
               critérios são fornecidos para que o wcag seja utilizado onde
-              requisitos e testes são necesários, como design e desenvolvimento.
+              requisitos e testes são necessários, como design e
+              desenvolvimento.
             </p>
           </li>
           <li>
             <p>
               <strong>Técnicas Suficientes e Auxiliares</strong> - Para cada um
-              dos critérios de sucesso, exitem várias técnicas documentadas para
+              dos critérios de sucesso, exitem várias Técnicas documentadas para
               resolver os problemas.
             </p>
           </li>
@@ -155,15 +163,17 @@
                 O conteúdo deve ser robusto o suficiente para ser interpretado
                 por uma ampla variedade de tecnologias, incluindo tecnologias
                 assistivas. Isso significa que ele deve ser compatível e
-                acessível através de diferentes navegadores, dispositivos e
-                tecnologias assistivas.
+                acessível por diferentes navegadores, dispositivos e tecnologias
+                assistivas.
               </li>
             </ul>
           </li>
         </ol>
       </section>
       <section class="hidden" id="diretrizes">
-        <h2>Diretrizes</h2>
+        <h2>
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/">Diretrizes</a>
+        </h2>
         <ol>
           <li>
             <p><strong>Perceptível</strong>:</p>
@@ -177,9 +187,13 @@
                 de mídia baseada em tempo, como legendas para vídeos.
               </li>
               <li>
-                <strong>1.3 *Adaptável</strong>: Criar conteúdo que possa ser
-                apresentado de diferentes maneiras sem perder informações ou
-                estrutura.
+                <strong
+                  ><a
+                    href="https://www.w3.org/WAI/WCAG22/Understanding/adaptable"
+                    >1.3 Adaptável</a
+                  ></strong
+                >: Criar conteúdo que possa ser apresentado de diferentes
+                maneiras sem perder informações ou estrutura.
               </li>
               <li>
                 1.4 Distinguível: Garantir que o conteúdo seja apresentado de
@@ -207,9 +221,13 @@
                 2.4 Navegável: Facilitar a navegação e localização do conteúdo.
               </li>
               <li>
-                <strong>2.5 *Modalidades de Input</strong>: Tornar as
-                funcionalidades acessíveis por meio de uma variedade de
-                dispositivos de input.
+                <strong
+                  ><a
+                    href="https://www.w3.org/WAI/WCAG22/Understanding/input-modalities"
+                    >2.5 Modalidades de Input</a
+                  ></strong
+                >: Tornar as funcionalidades acessíveis por meio de uma
+                variedade de dispositivos de input.
               </li>
             </ul>
           </li>
@@ -217,8 +235,13 @@
             <p><strong>Compreensível</strong>:</p>
             <ul>
               <li>
-                <strong>3.1 *Legível</strong>: Fazer com que o conteúdo textual
-                seja legível e compreensível.
+                <strong
+                  ><a
+                    href="https://www.w3.org/WAI/WCAG22/Understanding/readable"
+                    >3.1 Legível</a
+                  ></strong
+                >: Fazer com que o conteúdo textual seja legível e
+                compreensível.
               </li>
               <li>
                 3.2 Previsível: Fazer com que o conteúdo funcione de maneira
@@ -234,8 +257,13 @@
             <p><strong>Robusto</strong>:</p>
             <ul>
               <li>
-                <strong>4.1 *Compatível</strong>: Maximizar a compatibilidade
-                com diferentes tecnologias e navegadores.
+                <strong
+                  ><a
+                    href="https://www.w3.org/WAI/WCAG22/Understanding/compatible"
+                    >4.1 Compatível</a
+                  ></strong
+                >: Maximizar a compatibilidade com diferentes tecnologias e
+                navegadores.
               </li>
             </ul>
           </li>
@@ -251,14 +279,19 @@
         </h2>
         <dl>
           <dt>Objetivo</dt>
-          <dd>É mais fácil operar e navegar pelo conteúdo</dd>
+          <dd>É mais fácil operar e navegar pelo conteúdo.</dd>
           <dt>Tarefa</dt>
           <dd>
             Indique o significado de todos os controles e outras informações
-            importantes, quando disponíveis
+            importantes, quando disponíveis.
           </dd>
         </dl>
-        <p>Exemplo utilizando a técnica ARIA11:</p>
+        <p>
+          Exemplo utilizando a
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11"
+            >Técnica ARIA11</a
+          >:
+        </p>
         <form role="search">
           <label for="product-search" id="search-label">Procurar</label>
           <input
@@ -288,44 +321,19 @@
             controle correspondam.
           </dd>
         </dl>
-        <p>Exemplo utilizando a técnica G208:</p>
+        <p>
+          Exemplo utilizando a
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G208"
+            >Técnica G208</a
+          >:
+        </p>
         <fieldset>
           <legend>linguagens disponíveis:</legend>
-          <button
-            class="btn-small"
-            aria-label="português do brasil"
-            onclick="changeDocumentLang('pt-BR')"
-          >
-            pt
-          </button>
-          <button
-            class="btn-small"
-            aria-label="inglês"
-            onclick="changeDocumentLang('en')"
-          >
-            en
-          </button>
-          <button
-            class="btn-small"
-            aria-label="espanhol"
-            onclick="changeDocumentLang('es')"
-          >
-            es
-          </button>
-          <button
-            class="btn-small"
-            aria-label="francês"
-            onclick="changeDocumentLang('fr')"
-          >
-            fr
-          </button>
-          <button
-            class="btn-small"
-            aria-label="chinês"
-            onclick="changeDocumentLang('zh')"
-          >
-            zh
-          </button>
+          <button class="btn-small" aria-label="português do brasil">pt</button>
+          <button class="btn-small" aria-label="inglês">en</button>
+          <button class="btn-small" aria-label="espanhol">es</button>
+          <button class="btn-small" aria-label="francês">fr</button>
+          <button class="btn-small" aria-label="chinês">zh</button>
         </fieldset>
       </section>
       <section class="hidden" id="idioma-da-pagina">
@@ -334,15 +342,22 @@
             target="”_blank”"
             href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
             >Critério de Sucesso 3.1.1</a
-          >: idioma da Página [A]
+          >: Idioma da Página [A]
         </h2>
         <dl>
           <dt>Objetivo</dt>
-          <dd>A tecnologia assistiva pode determinar o idioma de uma página</dd>
+          <dd>
+            A tecnologia assistiva pode determinar o idioma de uma página.
+          </dd>
           <dt>Tarefa</dt>
-          <dd>Indique o idioma predominante em uma página</dd>
+          <dd>Indique o idioma predominante em uma página.</dd>
         </dl>
-        <p>Exemplo utilizando a técnica H57:</p>
+        <p>
+          Exemplo utilizando a
+          <a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
+            >Técnica H57</a
+          >:
+        </p>
         <button class="btn-small" onclick="changeDocumentLang('pt-BR')">
           pt
         </button>
@@ -363,17 +378,19 @@
         <dl>
           <dt>Objetivo</dt>
           <dd>
-            Usuários de tecnologia assistiva entenderem todos os componentes
+            Usuários de tecnologia assistiva entenderem todos os componentes.
           </dd>
           <dt>Tarefa</dt>
-          <dd>Dê aos componentes nomes, funções, estados e valores corretos</dd>
+          <dd>
+            Dê aos componentes nomes, funções, estados e valores corretos.
+          </dd>
         </dl>
         <p>
           Exemplo utilizando a
           <a
             href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA16"
             target="”_blank”"
-            >técnica ARIA16</a
+            >Técnica ARIA16</a
           >:
         </p>
         <label id="l1" for="f3">Me notifique em</label>
@@ -382,6 +399,45 @@
           <option value="2">2</option>
         </select>
         <span id="l2">dias de antecedência</span>
+      </section>
+      <section class="hidden" id="links-e-extras">
+        <h2>Links e Extras</h2>
+        <ul>
+          <li>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/"
+              >A documentação.</a
+            >
+          </li>
+          <li>
+            Como saber se está correto? testes e
+            <a href="https://www.w3.org/WAI/ER/tools/">ferramentes</a> de
+            avaliação de qualidade.
+          </li>
+          <li>
+            <a
+              href="https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019"
+              >Curso</a
+            >
+            de graça de intrudução à acessibilidade.
+          </li>
+          <li>
+            <a href="https://material.angular.io/components/categories">
+              Componentes do angular material</a
+            >
+            já são acessíveis.
+          </li>
+          <li>
+            <a href="https://material.angular.io/cdk/a11y/overview">
+              Página de acessibilidade do angular material.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+            ></a>
+            HTML semântico.
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
